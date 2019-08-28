@@ -28,7 +28,7 @@ namespace Demo.Tests.Controllers
             var expectedRuntime = isMono ? "Mono" : ".NET";
 
             // Assert
-            Assert.AreEqual(expectedVersion, result.ViewData["Version1"]);
+            Assert.AreEqual(expectedVersion, result.ViewData["Version"]);
             Assert.AreEqual(expectedRuntime, result.ViewData["Runtime"]);
         }
     }
